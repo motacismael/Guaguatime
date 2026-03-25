@@ -1,0 +1,47 @@
+[
+  {
+    "id": "normal",
+    "nombre": "☀️ Normal",
+    "descripcion": "Condiciones normales de tráfico",
+    "modificador_tiempo_pct": 0,
+    "cargo_extra": 0,
+    "color": "#22c55e",
+    "activo_por_defecto": true
+  },
+  {
+    "id": "lluvia",
+    "nombre": "🌧️ Lluvia",
+    "descripcion": "Calles mojadas, tráfico lento",
+    "modificador_tiempo_pct": 30,
+    "cargo_extra": 10,
+    "color": "#3b82f6",
+    "activo_por_defecto": false
+  },
+  {
+    "id": "hora_pico",
+    "nombre": "🕐 Hora Pico",
+    "descripcion": "Alto volumen de tráfico (7-9 AM / 5-7 PM)",
+    "modificador_tiempo_pct": 50,
+    "cargo_extra": 0,
+    "color": "#f59e0b",
+    "activo_por_defecto": false
+  },
+  {
+    "id": "construccion",
+    "nombre": "🚧 Construcción",
+    "descripcion": "Obras en la vía, desvíos posibles",
+    "modificador_tiempo_pct": 25,
+    "cargo_extra": 5,
+    "color": "#ef4444",
+    "activo_por_defecto": false
+  },
+  {
+    "id": "evento_especial",
+    "nombre": "🎉 Evento Especial",
+    "descripcion": "Cierre de calles por eventos o desfiles",
+    "modificador_tiempo_pct": 40,
+    "cargo_extra": 15,
+    "color": "#a855f7",
+    "activo_por_defecto": false
+  }
+]

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="GuaguaTime RD — Simulador de rutas y costos del transporte público dominicano. Compara concho, guagua y motoconcho entre barrios de Santo Domingo.">
+    <meta name="theme-color" content="#1a237e">
+    <title>GuaguaTime RD — Transporte Público Dominicano</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Ir al contenido principal</a>
+
+    <header class="header" id="header">
+        <div class="header__container">
+            <div class="header__brand">
+                <span class="header__logo" aria-hidden="true">🚌</span>
+                <div>
+                    <h1 class="header__title">GuaguaTime <span class="header__accent">RD</span></h1>
+                    <p class="header__subtitle">Transporte Público Dominicano</p>
+                </div>
+            </div>
+            <nav class="header__nav" aria-label="Navegación principal">
+                <button class="btn btn--icon" id="btn-dark-mode" aria-label="Alternar modo oscuro" title="Modo Oscuro">
+                    <span class="icon-sun" aria-hidden="true">☀️</span>
+                    <span class="icon-moon" aria-hidden="true" style="display:none;">🌙</span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main" id="main-content">
+        <!-- Search Section -->
+        <section class="search-panel" aria-label="Planificar viaje">
+            <div class="search-panel__container">
+                <h2 class="search-panel__title">¿A dónde vas hoy?</h2>
+                <p class="search-panel__desc">Elige tu origen y destino para comparar rutas de transporte</p>
+
+                <div class="search-panel__grid">
+                    <!-- Origin -->
+                    <div class="form-group">
+                        <label for="select-origen" class="form-label">
+                            <span aria-hidden="true">📍</span> Origen
+                        </label>
+                        <div class="select-wrapper">
+                            <input type="text" id="input-origen" class="form-input"
+                                placeholder="Buscar sector de origen..." autocomplete="off"
+                                aria-describedby="origen-help">
+                            <select id="select-origen" class="form-select" aria-label="Seleccionar sector de origen">
+                                <option value="">— Selecciona origen —</option>
+                            </select>
+                            <small id="origen-help" class="form-help">Escribe para filtrar o selecciona
+                                directamente</small>
+                        </div>
+                    </div>
+
+                    <!-- Swap Button -->
+                    <div class="form-group form-group--swap">
+                        <button class="btn btn--swap" id="btn-swap" aria-label="Intercambiar origen y destino"
+                            title="Intercambiar">
+                            ⇄
+                        </button>
+                    </div>
+
+                    <!-- Destination -->
+                    <div class="form-group">
+                        <label for="select-destino" class="form-label">
+                            <span aria-hidden="true">🏁</span> Destino
+                        </label>
+                        <div class="select-wrapper">
+                            <input type="text" id="input-destino" class="form-input"
+                                placeholder="Buscar sector de destino..." autocomplete="off"
+                                aria-describedby="destino-help">
+                            <select id="select-destino" class="form-select" aria-label="Seleccionar sector de destino">
+                                <option value="">— Selecciona destino —</option>
+                            </select>
+                            <small id="destino-help" class="form-help">Escribe para filtrar o selecciona
+                                directamente</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Conditions -->
+                <div class="conditions-panel" id="conditions-panel" aria-label="Condiciones de viaje">
+                    <h3 class="conditions-panel__title">Condiciones</h3>
+                    <div class="conditions-panel__grid" id="conditions-grid">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+
+                <!-- Search Button -->
+                <button class="btn btn--primary btn--large" id="btn-search" disabled>
+                    <span aria-hidden="true">🔍</span> Buscar Rutas
+                </button>
+            </div>
+        </section>
+
+        <!-- Alert Banner -->
+        <div class="alert-banner" id="alert-banner" role="alert" aria-live="polite" hidden>
+            <span class="alert-banner__icon" aria-hidden="true"></span>
+            <span class="alert-banner__text"></span>
+        </div>
+
+        <!-- Results Section -->
+        <section class="results" id="results-section" aria-label="Resultados de búsqueda" hidden>
+            <div class="results__container">
+                <div class="results__header">
+                    <h2 class="results__title">Rutas Disponibles</h2>
+                    <div class="results__meta" id="results-meta"></div>
+                </div>
+
+                <!-- Ranking Controls -->
+                <div class="ranking-controls" role="toolbar" aria-label="Ordenar resultados">
+                    <span class="ranking-controls__label">Ordenar por:</span>
+                    <button class="btn btn--filter btn--active" data-sort="tiempo" aria-pressed="true">⏱️
+                        Tiempo</button>
+                    <button class="btn btn--filter" data-sort="costo" aria-pressed="false">💰 Costo</button>
+                    <button class="btn btn--filter" data-sort="transbordos" aria-pressed="false">🔄 Transbordos</button>
+                </div>
+
+                <!-- Route Cards -->
+                <div class="results__grid" id="results-grid" role="list">
+                    <!-- Populated by JS -->
+                </div>
+
+                <!-- No Results -->
+                <div class="no-results" id="no-results" hidden>
+                    <span class="no-results__icon" aria-hidden="true">🤷</span>
+                    <p class="no-results__text">No se encontraron rutas directas entre estos sectores.</p>
+                    <p class="no-results__hint">Prueba seleccionando sectores más cercanos.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Favorites Section -->
+        <section class="favorites" id="favorites-section" aria-label="Rutas favoritas">
+            <div class="favorites__container">
+                <h2 class="favorites__title">⭐ Rutas Favoritas</h2>
+                <div class="favorites__grid" id="favorites-grid" role="list">
+                    <!-- Populated by JS -->
+                </div>
+                <div class="favorites__empty" id="favorites-empty">
+                    <p>No tienes rutas favoritas aún. ¡Busca una ruta y guárdala!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <p class="footer__text">
+                <strong>GuaguaTime RD</strong> — Simulador de transporte público dominicano
+            </p>
+            <p class="footer__credits">
+                Proyecto Carlos Mota · Hecho con ❤️ en Santo Domingo · 2026
+            </p>
+            <p class="footer__disclaimer">
+                ⚠️ Los tiempos y costos son estimaciones. Valores reales pueden variar.
+            </p>
+        </div>
+    </footer>
+
+    <script type="module" src="js/app.js"></script>
+</body>
+
+</html>

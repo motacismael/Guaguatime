@@ -1,0 +1,20 @@
+{
+    "name": "GuaguaTime RD",
+    "short_name": "GuaguaTime",
+    "description": "Simulador de rutas y costos del transporte público dominicano",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#f5f6fa",
+    "theme_color": "#1a237e",
+    "orientation": "portrait-primary",
+    "lang": "es-DO",
+    "categories": ["transportation", "utilities"],
+    "icons": [
+        {
+            "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='80'>🚌</text></svg>",
+            "sizes": "any",
+            "type": "image/svg+xml",
+            "purpose": "any"
+        }
+    ]
+}
