@@ -1,12 +1,10 @@
-import { debounce, formatCurrency, formatTime } from './utils.js';
+import { formatCurrency, formatTime } from './utils.js';
 import { isFavorite, saveFavorite, removeFavorite, getFavorites } from './favorites.js';
 
 const dom = {};
 
 export function initDOM() {
-    dom.inputOrigen = document.getElementById('input-origen');
     dom.selectOrigen = document.getElementById('select-origen');
-    dom.inputDestino = document.getElementById('input-destino');
     dom.selectDestino = document.getElementById('select-destino');
     dom.btnSwap = document.getElementById('btn-swap');
     dom.btnSearch = document.getElementById('btn-search');
@@ -182,43 +180,41 @@ export function renderFavorites() {
     if (favorites.length === 0) { dom.favoritesGrid.innerHTML = ''; dom.favoritesEmpty.hidden = false; return; }
 
     dom.favoritesEmpty.hidden = true;
-    dom.favoritesGrid.innerHTML = favorites.map(fav => `
-        <div class="favorite-card" role="listitem">
-            <div class="favorite-card__info">
-                <div class="favorite-card__name">${fav.icono} ${fav.nombre}</div>
-                <div class="favorite-card__meta">
-                    ${formatTime(fav.tiempo)} · ${formatCurrency(fav.costo)} · ${fav.transbordos} transbordo${fav.transbordos !== 1 ? 's' : ''}
+    dom.favoritesGrid.innerHTML = favorites.map(fav => {
+        const color = getTypeColor(fav.tipo);
+        return `
+        <div class="favorite-card" role="listitem" style="--card-accent: ${color}">
+            <div class="favorite-card__left">
+                <span class="favorite-card__icon">${fav.icono}</span>
+                <div class="favorite-card__info">
+                    <span class="favorite-card__type" style="color: ${color}">${fav.tipo.toUpperCase()}</span>
+                    <div class="favorite-card__name">${fav.nombre}</div>
                 </div>
             </div>
-            <button class="btn btn--remove-fav" data-fav-id="${fav.id}">✕ Eliminar</button>
-        </div>
-    `).join('');
+            <div class="favorite-card__stats">
+                <span class="favorite-card__pill">⏱ ${formatTime(fav.tiempo)}</span>
+                <span class="favorite-card__pill">💰 ${formatCurrency(fav.costo)}</span>
+                <span class="favorite-card__pill">🔄 ${fav.transbordos}</span>
+            </div>
+            <button class="btn btn--remove-fav" data-fav-id="${fav.id}" title="Eliminar de favoritos">✕</button>
+        </div>`;
+    }).join('');
 
     dom.favoritesGrid.querySelectorAll('.btn--remove-fav').forEach(btn => {
-        btn.addEventListener('click', () => { removeFavorite(btn.dataset.favId); renderFavorites(); });
+        btn.addEventListener('click', () => {
+            const card = btn.closest('.favorite-card');
+            card.style.transform = 'translateX(100%)';
+            card.style.opacity = '0';
+            setTimeout(() => { removeFavorite(btn.dataset.favId); renderFavorites(); }, 250);
+        });
     });
 }
 
-export function setupSearch(sectores) {
-    const filterSelect = (input, select) => {
-        const query = input.value.toLowerCase().trim();
-        select.querySelectorAll('option').forEach(opt => {
-            if (!opt.value) return;
-            opt.style.display = !query || opt.textContent.toLowerCase().includes(query) ? '' : 'none';
-        });
-        select.querySelectorAll('optgroup').forEach(og => {
-            og.style.display = og.querySelectorAll('option:not([style*="display: none"])').length > 0 ? '' : 'none';
-        });
-    };
 
-    dom.inputOrigen.addEventListener('input', debounce(() => filterSelect(dom.inputOrigen, dom.selectOrigen)));
-    dom.inputDestino.addEventListener('input', debounce(() => filterSelect(dom.inputDestino, dom.selectDestino)));
-}
 
 export function setupSwap() {
     dom.btnSwap.addEventListener('click', () => {
         [dom.selectOrigen.value, dom.selectDestino.value] = [dom.selectDestino.value, dom.selectOrigen.value];
-        [dom.inputOrigen.value, dom.inputDestino.value] = [dom.inputDestino.value, dom.inputOrigen.value];
         updateSearchButton();
     });
 }

@@ -14,7 +14,6 @@ async function init() {
 
     UI.renderSectores(appData.sectores);
     UI.renderCondiciones(appData.condiciones, handleConditionsChange);
-    UI.setupSearch(appData.sectores);
     UI.setupSwap();
     UI.onSelectChange(() => UI.updateSearchButton());
     UI.onSearchClick(handleSearch);
