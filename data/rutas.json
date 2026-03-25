@@ -1,397 +1,168 @@
 [
-  {
-    "id": "r001",
-    "nombre": "Gazcue → Zona Colonial (Concho)",
-    "tipo": "concho",
-    "icono": "🚗",
-    "tramos": [
-      { "desde": "gazcue", "hasta": "zona_colonial", "tiempo_min": 10, "tiempo_pct": 10, "costo": 30 }
-    ],
-    "transbordos": 0
-  },
-  {
-    "id": "r002",
-    "nombre": "Gazcue → Los Mina (Guagua OMSA)",
-    "tipo": "guagua",
-    "icono": "🚌",
-    "tramos": [
-      { "desde": "gazcue", "hasta": "zona_colonial", "tiempo_min": 8, "tiempo_pct": 15, "costo": 15 },
-      { "desde": "zona_colonial", "hasta": "los_mina", "tiempo_min": 22, "tiempo_pct": 20, "costo": 15 }
-    ],
-    "transbordos": 0
-  },
-  {
-    "id": "r003",
-    "nombre": "Gazcue → Los Mina (Concho + Guagua)",
-    "tipo": "mixto",
-    "icono": "🔄",
-    "tramos": [
-      { "desde": "gazcue", "hasta": "27_de_febrero", "tiempo_min": 7, "tiempo_pct": 10, "costo": 30 },
-      { "desde": "27_de_febrero", "hasta": "los_mina", "tiempo_min": 18, "tiempo_pct": 25, "costo": 25 }
-    ],
-    "transbordos": 1
-  },
-  {
-    "id": "r004",
-    "nombre": "Gazcue → Los Mina (Motoconcho)",
-    "tipo": "motoconcho",
-    "icono": "🏍️",
-    "tramos": [
-      { "desde": "gazcue", "hasta": "los_mina", "tiempo_min": 15, "tiempo_pct": 20, "costo": 100 }
-    ],
-    "transbordos": 0
-  },
-  {
-    "id": "r005",
-    "nombre": "Piantini → Zona Colonial (Concho)",
-    "tipo": "concho",
-    "icono": "🚗",
-    "tramos": [
-      { "desde": "piantini", "hasta": "bella_vista", "tiempo_min": 5, "tiempo_pct": 10, "costo": 25 },
-      { "desde": "bella_vista", "hasta": "zona_colonial", "tiempo_min": 12, "tiempo_pct": 15, "costo": 30 }
-    ],
-    "transbordos": 0
-  },
-  {
-    "id": "r006",
-    "nombre": "Villa Mella → Zona Colonial (Guagua)",
-    "tipo": "guagua",
-    "icono": "🚌",
-    "tramos": [
-      { "desde": "villa_mella", "hasta": "cristo_rey", "tiempo_min": 20, "tiempo_pct": 25, "costo": 20 },
-      { "desde": "cristo_rey", "hasta": "villa_juana", "tiempo_min": 8, "tiempo_pct": 15, "costo": 15 },
-      { "desde": "villa_juana", "hasta": "zona_colonial", "tiempo_min": 10, "tiempo_pct": 10, "costo": 15 }
-    ],
-    "transbordos": 0
-  },
-  {
-    "id": "r007",
-    "nombre": "Villa Mella → Zona Colonial (Motoconcho + Guagua)",
-    "tipo": "mixto",
-    "icono": "🔄",
-    "tramos": [
-      { "desde": "villa_mella", "hasta": "cristo_rey", "tiempo_min": 12, "tiempo_pct": 15, "costo": 50 },
-      { "desde": "cristo_rey", "hasta": "zona_colonial", "tiempo_min": 15, "tiempo_pct": 20, "costo": 20 }
-    ],
-    "transbordos": 1
-  },
-  {
-    "id": "r008",
-    "nombre": "Los Alcarrizos → 27 de Febrero (Guagua)",
-    "tipo": "guagua",
-    "icono": "🚌",
-    "tramos": [
-      { "desde": "los_alcarrizos", "hasta": "herrera", "tiempo_min": 15, "tiempo_pct": 20, "costo": 20 },
-      { "desde": "herrera", "hasta": "los_rios", "tiempo_min": 12, "tiempo_pct": 15, "costo": 15 },
-      { "desde": "los_rios", "hasta": "27_de_febrero", "tiempo_min": 8, "tiempo_pct": 10, "costo": 15 }
-    ],
-    "transbordos": 0
-  },
-  {
-    "id": "r009",
-    "nombre": "Los Alcarrizos → 27 de Febrero (Concho)",
-    "tipo": "concho",
-    "icono": "🚗",
-    "tramos": [
-      { "desde": "los_alcarrizos", "hasta": "herrera", "tiempo_min": 12, "tiempo_pct": 15, "costo": 35 },
-      { "desde": "herrera", "hasta": "27_de_febrero", "tiempo_min": 15, "tiempo_pct": 20, "costo": 35 }
-    ],
-    "transbordos": 0
-  },
-  {
-    "id": "r010",
-    "nombre": "Naco → Malecón (Concho)",
-    "tipo": "concho",
-    "icono": "🚗",
-    "tramos": [
-      { "desde": "naco", "hasta": "piantini", "tiempo_min": 5, "tiempo_pct": 10, "costo": 25 },
-      { "desde": "piantini", "hasta": "malecon", "tiempo_min": 10, "tiempo_pct": 15, "costo": 30 }
-    ],
-    "transbordos": 0
-  },
-  {
-    "id": "r011",
-    "nombre": "Naco → Malecón (Motoconcho)",
-    "tipo": "motoconcho",
-    "icono": "🏍️",
-    "tramos": [
-      { "desde": "naco", "hasta": "malecon", "tiempo_min": 8, "tiempo_pct": 15, "costo": 75 }
-    ],
-    "transbordos": 0
-  },
-  {
-    "id": "r012",
-    "nombre": "Cristo Rey → Piantini (Guagua)",
-    "tipo": "guagua",
-    "icono": "🚌",
-    "tramos": [
-      { "desde": "cristo_rey", "hasta": "los_prados", "tiempo_min": 10, "tiempo_pct": 15, "costo": 15 },
-      { "desde": "los_prados", "hasta": "piantini", "tiempo_min": 8, "tiempo_pct": 10, "costo": 15 }
-    ],
-    "transbordos": 0
-  },
-  {
-    "id": "r013",
-    "nombre": "Cristo Rey → Piantini (Concho)",
-    "tipo": "concho",
-    "icono": "🚗",
-    "tramos": [
-      { "desde": "cristo_rey", "hasta": "piantini", "tiempo_min": 12, "tiempo_pct": 20, "costo": 40 }
-    ],
-    "transbordos": 0
-  },
-  {
-    "id": "r014",
-    "nombre": "Alma Rosa → Gazcue (Guagua + Concho)",
-    "tipo": "mixto",
-    "icono": "🔄",
-    "tramos": [
-      { "desde": "alma_rosa", "hasta": "los_mina", "tiempo_min": 10, "tiempo_pct": 15, "costo": 15 },
-      { "desde": "los_mina", "hasta": "ensanche_ozama", "tiempo_min": 8, "tiempo_pct": 10, "costo": 15 },
-      { "desde": "ensanche_ozama", "hasta": "gazcue", "tiempo_min": 15, "tiempo_pct": 20, "costo": 30 }
-    ],
-    "transbordos": 1
-  },
-  {
-    "id": "r015",
-    "nombre": "Alma Rosa → Gazcue (Motoconcho)",
-    "tipo": "motoconcho",
-    "icono": "🏍️",
-    "tramos": [
-      { "desde": "alma_rosa", "hasta": "gazcue", "tiempo_min": 20, "tiempo_pct": 25, "costo": 150 }
-    ],
-    "transbordos": 0
-  },
-  {
-    "id": "r016",
-    "nombre": "Herrera → Naco (Guagua OMSA)",
-    "tipo": "guagua",
-    "icono": "🚌",
-    "tramos": [
-      { "desde": "herrera", "hasta": "los_rios", "tiempo_min": 12, "tiempo_pct": 15, "costo": 20 },
-      { "desde": "los_rios", "hasta": "arroyo_hondo", "tiempo_min": 10, "tiempo_pct": 10, "costo": 15 },
-      { "desde": "arroyo_hondo", "hasta": "naco", "tiempo_min": 8, "tiempo_pct": 15, "costo": 15 }
-    ],
-    "transbordos": 0
-  },
-  {
-    "id": "r017",
-    "nombre": "Herrera → Naco (Concho)",
-    "tipo": "concho",
-    "icono": "🚗",
-    "tramos": [
-      { "desde": "herrera", "hasta": "27_de_febrero", "tiempo_min": 15, "tiempo_pct": 20, "costo": 35 },
-      { "desde": "27_de_febrero", "hasta": "naco", "tiempo_min": 10, "tiempo_pct": 15, "costo": 30 }
-    ],
-    "transbordos": 0
-  },
-  {
-    "id": "r018",
-    "nombre": "Arroyo Hondo → Zona Colonial (Concho)",
-    "tipo": "concho",
-    "icono": "🚗",
-    "tramos": [
-      { "desde": "arroyo_hondo", "hasta": "los_prados", "tiempo_min": 8, "tiempo_pct": 10, "costo": 25 },
-      { "desde": "los_prados", "hasta": "gazcue", "tiempo_min": 7, "tiempo_pct": 10, "costo": 25 },
-      { "desde": "gazcue", "hasta": "zona_colonial", "tiempo_min": 10, "tiempo_pct": 10, "costo": 30 }
-    ],
-    "transbordos": 0
-  },
-  {
-    "id": "r019",
-    "nombre": "La Feria → Los Mina (Guagua)",
-    "tipo": "guagua",
-    "icono": "🚌",
-    "tramos": [
-      { "desde": "la_feria", "hasta": "villa_juana", "tiempo_min": 6, "tiempo_pct": 10, "costo": 15 },
-      { "desde": "villa_juana", "hasta": "ensanche_ozama", "tiempo_min": 10, "tiempo_pct": 15, "costo": 15 },
-      { "desde": "ensanche_ozama", "hasta": "los_mina", "tiempo_min": 8, "tiempo_pct": 10, "costo": 15 }
-    ],
-    "transbordos": 0
-  },
-  {
-    "id": "r020",
-    "nombre": "Sabana Perdida → Cristo Rey (Guagua + Concho)",
-    "tipo": "mixto",
-    "icono": "🔄",
-    "tramos": [
-      { "desde": "sabana_perdida", "hasta": "villa_mella", "tiempo_min": 12, "tiempo_pct": 15, "costo": 20 },
-      { "desde": "villa_mella", "hasta": "capotillo", "tiempo_min": 10, "tiempo_pct": 20, "costo": 25 },
-      { "desde": "capotillo", "hasta": "cristo_rey", "tiempo_min": 8, "tiempo_pct": 10, "costo": 25 }
-    ],
-    "transbordos": 1
-  },
-  {
-    "id": "r021",
-    "nombre": "Gualey → Bella Vista (Motoconcho)",
-    "tipo": "motoconcho",
-    "icono": "🏍️",
-    "tramos": [
-      { "desde": "gualey", "hasta": "bella_vista", "tiempo_min": 10, "tiempo_pct": 15, "costo": 60 }
-    ],
-    "transbordos": 0
-  },
-  {
-    "id": "r022",
-    "nombre": "Gualey → Bella Vista (Concho)",
-    "tipo": "concho",
-    "icono": "🚗",
-    "tramos": [
-      { "desde": "gualey", "hasta": "villa_consuelo", "tiempo_min": 5, "tiempo_pct": 10, "costo": 25 },
-      { "desde": "villa_consuelo", "hasta": "bella_vista", "tiempo_min": 12, "tiempo_pct": 15, "costo": 30 }
-    ],
-    "transbordos": 0
-  },
-  {
-    "id": "r023",
-    "nombre": "Villa Consuelo → Arroyo Hondo (Guagua)",
-    "tipo": "guagua",
-    "icono": "🚌",
-    "tramos": [
-      { "desde": "villa_consuelo", "hasta": "cristo_rey", "tiempo_min": 7, "tiempo_pct": 10, "costo": 15 },
-      { "desde": "cristo_rey", "hasta": "los_prados", "tiempo_min": 10, "tiempo_pct": 15, "costo": 15 },
-      { "desde": "los_prados", "hasta": "arroyo_hondo", "tiempo_min": 8, "tiempo_pct": 10, "costo": 15 }
-    ],
-    "transbordos": 0
-  },
-  {
-    "id": "r024",
-    "nombre": "Las Américas → Naco (Guagua + Concho)",
-    "tipo": "mixto",
-    "icono": "🔄",
-    "tramos": [
-      { "desde": "las_americas", "hasta": "san_isidro", "tiempo_min": 8, "tiempo_pct": 10, "costo": 15 },
-      { "desde": "san_isidro", "hasta": "los_mina", "tiempo_min": 10, "tiempo_pct": 15, "costo": 20 },
-      { "desde": "los_mina", "hasta": "naco", "tiempo_min": 20, "tiempo_pct": 25, "costo": 35 }
-    ],
-    "transbordos": 1
-  },
-  {
-    "id": "r025",
-    "nombre": "Ensanche Luperón → Malecón (Guagua)",
-    "tipo": "guagua",
-    "icono": "🚌",
-    "tramos": [
-      { "desde": "ensanche_luperon", "hasta": "la_feria", "tiempo_min": 7, "tiempo_pct": 10, "costo": 15 },
-      { "desde": "la_feria", "hasta": "gazcue", "tiempo_min": 8, "tiempo_pct": 10, "costo": 15 },
-      { "desde": "gazcue", "hasta": "malecon", "tiempo_min": 6, "tiempo_pct": 10, "costo": 15 }
-    ],
-    "transbordos": 0
-  },
-  {
-    "id": "r026",
-    "nombre": "Los Ríos → Los Mina (Guagua OMSA)",
-    "tipo": "guagua",
-    "icono": "🚌",
-    "tramos": [
-      { "desde": "los_rios", "hasta": "27_de_febrero", "tiempo_min": 8, "tiempo_pct": 10, "costo": 15 },
-      { "desde": "27_de_febrero", "hasta": "ensanche_ozama", "tiempo_min": 12, "tiempo_pct": 15, "costo": 15 },
-      { "desde": "ensanche_ozama", "hasta": "los_mina", "tiempo_min": 8, "tiempo_pct": 10, "costo": 15 }
-    ],
-    "transbordos": 0
-  },
-  {
-    "id": "r027",
-    "nombre": "Manoguayabo → Gazcue (Guagua + Concho)",
-    "tipo": "mixto",
-    "icono": "🔄",
-    "tramos": [
-      { "desde": "manoguayabo", "hasta": "los_alcarrizos", "tiempo_min": 10, "tiempo_pct": 15, "costo": 20 },
-      { "desde": "los_alcarrizos", "hasta": "herrera", "tiempo_min": 15, "tiempo_pct": 20, "costo": 20 },
-      { "desde": "herrera", "hasta": "los_rios", "tiempo_min": 12, "tiempo_pct": 15, "costo": 25 },
-      { "desde": "los_rios", "hasta": "gazcue", "tiempo_min": 10, "tiempo_pct": 10, "costo": 30 }
-    ],
-    "transbordos": 2
-  },
-  {
-    "id": "r028",
-    "nombre": "Charles de Gaulle → Piantini (Concho + Guagua)",
-    "tipo": "mixto",
-    "icono": "🔄",
-    "tramos": [
-      { "desde": "charles_de_gaulle", "hasta": "alma_rosa", "tiempo_min": 6, "tiempo_pct": 10, "costo": 20 },
-      { "desde": "alma_rosa", "hasta": "los_mina", "tiempo_min": 10, "tiempo_pct": 15, "costo": 15 },
-      { "desde": "los_mina", "hasta": "piantini", "tiempo_min": 22, "tiempo_pct": 25, "costo": 30 }
-    ],
-    "transbordos": 1
-  },
-  {
-    "id": "r029",
-    "nombre": "La Zurza → Los Prados (Motoconcho)",
-    "tipo": "motoconcho",
-    "icono": "🏍️",
-    "tramos": [
-      { "desde": "la_zurza", "hasta": "los_prados", "tiempo_min": 8, "tiempo_pct": 15, "costo": 50 }
-    ],
-    "transbordos": 0
-  },
-  {
-    "id": "r030",
-    "nombre": "Mendoza → Zona Colonial (Guagua)",
-    "tipo": "guagua",
-    "icono": "🚌",
-    "tramos": [
-      { "desde": "mendoza", "hasta": "los_mina", "tiempo_min": 8, "tiempo_pct": 10, "costo": 15 },
-      { "desde": "los_mina", "hasta": "ensanche_ozama", "tiempo_min": 7, "tiempo_pct": 10, "costo": 15 },
-      { "desde": "ensanche_ozama", "hasta": "zona_colonial", "tiempo_min": 12, "tiempo_pct": 15, "costo": 15 }
-    ],
-    "transbordos": 0
-  },
-  {
-    "id": "r031",
-    "nombre": "San Isidro → Gazcue (Guagua OMSA)",
-    "tipo": "guagua",
-    "icono": "🚌",
-    "tramos": [
-      { "desde": "san_isidro", "hasta": "los_mina", "tiempo_min": 10, "tiempo_pct": 15, "costo": 15 },
-      { "desde": "los_mina", "hasta": "ensanche_ozama", "tiempo_min": 7, "tiempo_pct": 10, "costo": 15 },
-      { "desde": "ensanche_ozama", "hasta": "gazcue", "tiempo_min": 15, "tiempo_pct": 20, "costo": 15 }
-    ],
-    "transbordos": 0
-  },
-  {
-    "id": "r032",
-    "nombre": "Capotillo → Zona Colonial (Concho)",
-    "tipo": "concho",
-    "icono": "🚗",
-    "tramos": [
-      { "desde": "capotillo", "hasta": "villa_consuelo", "tiempo_min": 6, "tiempo_pct": 10, "costo": 25 },
-      { "desde": "villa_consuelo", "hasta": "zona_colonial", "tiempo_min": 10, "tiempo_pct": 15, "costo": 30 }
-    ],
-    "transbordos": 0
-  },
-  {
-    "id": "r033",
-    "nombre": "Los Prados → Malecón (Concho)",
-    "tipo": "concho",
-    "icono": "🚗",
-    "tramos": [
-      { "desde": "los_prados", "hasta": "gazcue", "tiempo_min": 7, "tiempo_pct": 10, "costo": 25 },
-      { "desde": "gazcue", "hasta": "malecon", "tiempo_min": 6, "tiempo_pct": 10, "costo": 25 }
-    ],
-    "transbordos": 0
-  },
-  {
-    "id": "r034",
-    "nombre": "Bella Vista → Los Mina (Guagua + Concho)",
-    "tipo": "mixto",
-    "icono": "🔄",
-    "tramos": [
-      { "desde": "bella_vista", "hasta": "ensanche_ozama", "tiempo_min": 15, "tiempo_pct": 20, "costo": 25 },
-      { "desde": "ensanche_ozama", "hasta": "los_mina", "tiempo_min": 8, "tiempo_pct": 10, "costo": 25 }
-    ],
-    "transbordos": 1
-  },
-  {
-    "id": "r035",
-    "nombre": "27 de Febrero → Alma Rosa (Guagua)",
-    "tipo": "guagua",
-    "icono": "🚌",
-    "tramos": [
-      { "desde": "27_de_febrero", "hasta": "ensanche_ozama", "tiempo_min": 12, "tiempo_pct": 15, "costo": 15 },
-      { "desde": "ensanche_ozama", "hasta": "los_mina", "tiempo_min": 8, "tiempo_pct": 10, "costo": 15 },
-      { "desde": "los_mina", "hasta": "alma_rosa", "tiempo_min": 10, "tiempo_pct": 15, "costo": 15 }
-    ],
-    "transbordos": 0
-  }
+  {"id":"r001","nombre":"Gazcue → Zona Colonial","tipo":"concho","icono":"🚗","tramos":[{"desde":"gazcue","hasta":"zona_colonial","tiempo_min":10,"tiempo_pct":10,"costo":30}],"transbordos":0},
+  {"id":"r002","nombre":"Gazcue → Zona Colonial","tipo":"guagua","icono":"🚌","tramos":[{"desde":"gazcue","hasta":"zona_colonial","tiempo_min":15,"tiempo_pct":15,"costo":15}],"transbordos":0},
+  {"id":"r003","nombre":"Gazcue → Malecón","tipo":"concho","icono":"🚗","tramos":[{"desde":"gazcue","hasta":"malecon","tiempo_min":6,"tiempo_pct":10,"costo":25}],"transbordos":0},
+  {"id":"r004","nombre":"Gazcue → Los Prados","tipo":"concho","icono":"🚗","tramos":[{"desde":"gazcue","hasta":"los_prados","tiempo_min":7,"tiempo_pct":10,"costo":25}],"transbordos":0},
+  {"id":"r005","nombre":"Gazcue → Bella Vista","tipo":"concho","icono":"🚗","tramos":[{"desde":"gazcue","hasta":"bella_vista","tiempo_min":8,"tiempo_pct":10,"costo":30}],"transbordos":0},
+  {"id":"r006","nombre":"Gazcue → La Feria","tipo":"motoconcho","icono":"🏍️","tramos":[{"desde":"gazcue","hasta":"la_feria","tiempo_min":5,"tiempo_pct":10,"costo":50}],"transbordos":0},
+  {"id":"r007","nombre":"Gazcue → Villa Juana","tipo":"concho","icono":"🚗","tramos":[{"desde":"gazcue","hasta":"villa_juana","tiempo_min":8,"tiempo_pct":15,"costo":25}],"transbordos":0},
+  {"id":"r008","nombre":"Gazcue → Los Mina","tipo":"guagua","icono":"🚌","tramos":[{"desde":"gazcue","hasta":"zona_colonial","tiempo_min":8,"tiempo_pct":15,"costo":15},{"desde":"zona_colonial","hasta":"los_mina","tiempo_min":22,"tiempo_pct":20,"costo":15}],"transbordos":0},
+  {"id":"r009","nombre":"Gazcue → Los Mina","tipo":"concho","icono":"🚗","tramos":[{"desde":"gazcue","hasta":"ensanche_ozama","tiempo_min":12,"tiempo_pct":15,"costo":30},{"desde":"ensanche_ozama","hasta":"los_mina","tiempo_min":8,"tiempo_pct":10,"costo":25}],"transbordos":0},
+  {"id":"r010","nombre":"Gazcue → Los Mina","tipo":"motoconcho","icono":"🏍️","tramos":[{"desde":"gazcue","hasta":"los_mina","tiempo_min":15,"tiempo_pct":20,"costo":100}],"transbordos":0},
+  {"id":"r011","nombre":"Gazcue → Naco","tipo":"concho","icono":"🚗","tramos":[{"desde":"gazcue","hasta":"los_prados","tiempo_min":7,"tiempo_pct":10,"costo":25},{"desde":"los_prados","hasta":"naco","tiempo_min":8,"tiempo_pct":10,"costo":25}],"transbordos":0},
+  {"id":"r012","nombre":"Gazcue → Piantini","tipo":"concho","icono":"🚗","tramos":[{"desde":"gazcue","hasta":"bella_vista","tiempo_min":8,"tiempo_pct":10,"costo":25},{"desde":"bella_vista","hasta":"piantini","tiempo_min":5,"tiempo_pct":10,"costo":25}],"transbordos":0},
+
+  {"id":"r013","nombre":"Zona Colonial → Gazcue","tipo":"concho","icono":"🚗","tramos":[{"desde":"zona_colonial","hasta":"gazcue","tiempo_min":10,"tiempo_pct":10,"costo":30}],"transbordos":0},
+  {"id":"r014","nombre":"Zona Colonial → Malecón","tipo":"concho","icono":"🚗","tramos":[{"desde":"zona_colonial","hasta":"malecon","tiempo_min":5,"tiempo_pct":10,"costo":25}],"transbordos":0},
+  {"id":"r015","nombre":"Zona Colonial → Villa Juana","tipo":"motoconcho","icono":"🏍️","tramos":[{"desde":"zona_colonial","hasta":"villa_juana","tiempo_min":6,"tiempo_pct":10,"costo":40}],"transbordos":0},
+  {"id":"r016","nombre":"Zona Colonial → Los Mina","tipo":"guagua","icono":"🚌","tramos":[{"desde":"zona_colonial","hasta":"los_mina","tiempo_min":22,"tiempo_pct":20,"costo":15}],"transbordos":0},
+
+  {"id":"r017","nombre":"Piantini → Zona Colonial","tipo":"concho","icono":"🚗","tramos":[{"desde":"piantini","hasta":"bella_vista","tiempo_min":5,"tiempo_pct":10,"costo":25},{"desde":"bella_vista","hasta":"zona_colonial","tiempo_min":12,"tiempo_pct":15,"costo":30}],"transbordos":0},
+  {"id":"r018","nombre":"Piantini → Naco","tipo":"concho","icono":"🚗","tramos":[{"desde":"piantini","hasta":"naco","tiempo_min":5,"tiempo_pct":10,"costo":25}],"transbordos":0},
+  {"id":"r019","nombre":"Piantini → Naco","tipo":"motoconcho","icono":"🏍️","tramos":[{"desde":"piantini","hasta":"naco","tiempo_min":3,"tiempo_pct":10,"costo":40}],"transbordos":0},
+  {"id":"r020","nombre":"Piantini → Bella Vista","tipo":"concho","icono":"🚗","tramos":[{"desde":"piantini","hasta":"bella_vista","tiempo_min":5,"tiempo_pct":10,"costo":25}],"transbordos":0},
+  {"id":"r021","nombre":"Piantini → Los Prados","tipo":"concho","icono":"🚗","tramos":[{"desde":"piantini","hasta":"los_prados","tiempo_min":7,"tiempo_pct":10,"costo":25}],"transbordos":0},
+  {"id":"r022","nombre":"Piantini → Malecón","tipo":"concho","icono":"🚗","tramos":[{"desde":"piantini","hasta":"malecon","tiempo_min":10,"tiempo_pct":15,"costo":30}],"transbordos":0},
+  {"id":"r023","nombre":"Piantini → Arroyo Hondo","tipo":"concho","icono":"🚗","tramos":[{"desde":"piantini","hasta":"arroyo_hondo","tiempo_min":10,"tiempo_pct":15,"costo":30}],"transbordos":0},
+
+  {"id":"r024","nombre":"Naco → Piantini","tipo":"concho","icono":"🚗","tramos":[{"desde":"naco","hasta":"piantini","tiempo_min":5,"tiempo_pct":10,"costo":25}],"transbordos":0},
+  {"id":"r025","nombre":"Naco → Malecón","tipo":"concho","icono":"🚗","tramos":[{"desde":"naco","hasta":"piantini","tiempo_min":5,"tiempo_pct":10,"costo":25},{"desde":"piantini","hasta":"malecon","tiempo_min":10,"tiempo_pct":15,"costo":30}],"transbordos":0},
+  {"id":"r026","nombre":"Naco → Malecón","tipo":"motoconcho","icono":"🏍️","tramos":[{"desde":"naco","hasta":"malecon","tiempo_min":8,"tiempo_pct":15,"costo":75}],"transbordos":0},
+  {"id":"r027","nombre":"Naco → Bella Vista","tipo":"concho","icono":"🚗","tramos":[{"desde":"naco","hasta":"bella_vista","tiempo_min":7,"tiempo_pct":10,"costo":25}],"transbordos":0},
+  {"id":"r028","nombre":"Naco → Los Prados","tipo":"concho","icono":"🚗","tramos":[{"desde":"naco","hasta":"los_prados","tiempo_min":8,"tiempo_pct":10,"costo":25}],"transbordos":0},
+  {"id":"r029","nombre":"Naco → Arroyo Hondo","tipo":"concho","icono":"🚗","tramos":[{"desde":"naco","hasta":"arroyo_hondo","tiempo_min":10,"tiempo_pct":15,"costo":30}],"transbordos":0},
+  {"id":"r030","nombre":"Naco → Zona Colonial","tipo":"guagua","icono":"🚌","tramos":[{"desde":"naco","hasta":"bella_vista","tiempo_min":7,"tiempo_pct":10,"costo":15},{"desde":"bella_vista","hasta":"zona_colonial","tiempo_min":12,"tiempo_pct":15,"costo":15}],"transbordos":0},
+
+  {"id":"r031","nombre":"Bella Vista → Zona Colonial","tipo":"concho","icono":"🚗","tramos":[{"desde":"bella_vista","hasta":"zona_colonial","tiempo_min":12,"tiempo_pct":15,"costo":30}],"transbordos":0},
+  {"id":"r032","nombre":"Bella Vista → Piantini","tipo":"concho","icono":"🚗","tramos":[{"desde":"bella_vista","hasta":"piantini","tiempo_min":5,"tiempo_pct":10,"costo":25}],"transbordos":0},
+  {"id":"r033","nombre":"Bella Vista → Gazcue","tipo":"concho","icono":"🚗","tramos":[{"desde":"bella_vista","hasta":"gazcue","tiempo_min":8,"tiempo_pct":10,"costo":25}],"transbordos":0},
+  {"id":"r034","nombre":"Bella Vista → Los Mina","tipo":"mixto","icono":"🔄","tramos":[{"desde":"bella_vista","hasta":"ensanche_ozama","tiempo_min":15,"tiempo_pct":20,"costo":25},{"desde":"ensanche_ozama","hasta":"los_mina","tiempo_min":8,"tiempo_pct":10,"costo":25}],"transbordos":1},
+
+  {"id":"r035","nombre":"Los Prados → Gazcue","tipo":"concho","icono":"🚗","tramos":[{"desde":"los_prados","hasta":"gazcue","tiempo_min":7,"tiempo_pct":10,"costo":25}],"transbordos":0},
+  {"id":"r036","nombre":"Los Prados → Piantini","tipo":"concho","icono":"🚗","tramos":[{"desde":"los_prados","hasta":"piantini","tiempo_min":7,"tiempo_pct":10,"costo":25}],"transbordos":0},
+  {"id":"r037","nombre":"Los Prados → Cristo Rey","tipo":"guagua","icono":"🚌","tramos":[{"desde":"los_prados","hasta":"cristo_rey","tiempo_min":10,"tiempo_pct":15,"costo":15}],"transbordos":0},
+  {"id":"r038","nombre":"Los Prados → Malecón","tipo":"concho","icono":"🚗","tramos":[{"desde":"los_prados","hasta":"gazcue","tiempo_min":7,"tiempo_pct":10,"costo":25},{"desde":"gazcue","hasta":"malecon","tiempo_min":6,"tiempo_pct":10,"costo":25}],"transbordos":0},
+  {"id":"r039","nombre":"Los Prados → Arroyo Hondo","tipo":"concho","icono":"🚗","tramos":[{"desde":"los_prados","hasta":"arroyo_hondo","tiempo_min":8,"tiempo_pct":10,"costo":25}],"transbordos":0},
+  {"id":"r040","nombre":"Los Prados → Naco","tipo":"concho","icono":"🚗","tramos":[{"desde":"los_prados","hasta":"naco","tiempo_min":8,"tiempo_pct":10,"costo":25}],"transbordos":0},
+
+  {"id":"r041","nombre":"Cristo Rey → Piantini","tipo":"guagua","icono":"🚌","tramos":[{"desde":"cristo_rey","hasta":"los_prados","tiempo_min":10,"tiempo_pct":15,"costo":15},{"desde":"los_prados","hasta":"piantini","tiempo_min":8,"tiempo_pct":10,"costo":15}],"transbordos":0},
+  {"id":"r042","nombre":"Cristo Rey → Piantini","tipo":"concho","icono":"🚗","tramos":[{"desde":"cristo_rey","hasta":"piantini","tiempo_min":12,"tiempo_pct":20,"costo":40}],"transbordos":0},
+  {"id":"r043","nombre":"Cristo Rey → Los Prados","tipo":"guagua","icono":"🚌","tramos":[{"desde":"cristo_rey","hasta":"los_prados","tiempo_min":10,"tiempo_pct":15,"costo":15}],"transbordos":0},
+  {"id":"r044","nombre":"Cristo Rey → Villa Juana","tipo":"concho","icono":"🚗","tramos":[{"desde":"cristo_rey","hasta":"villa_juana","tiempo_min":7,"tiempo_pct":10,"costo":25}],"transbordos":0},
+  {"id":"r045","nombre":"Cristo Rey → Villa Consuelo","tipo":"concho","icono":"🚗","tramos":[{"desde":"cristo_rey","hasta":"villa_consuelo","tiempo_min":7,"tiempo_pct":10,"costo":25}],"transbordos":0},
+  {"id":"r046","nombre":"Cristo Rey → Zona Colonial","tipo":"guagua","icono":"🚌","tramos":[{"desde":"cristo_rey","hasta":"villa_juana","tiempo_min":8,"tiempo_pct":15,"costo":15},{"desde":"villa_juana","hasta":"zona_colonial","tiempo_min":10,"tiempo_pct":10,"costo":15}],"transbordos":0},
+  {"id":"r047","nombre":"Cristo Rey → Capotillo","tipo":"motoconcho","icono":"🏍️","tramos":[{"desde":"cristo_rey","hasta":"capotillo","tiempo_min":8,"tiempo_pct":10,"costo":50}],"transbordos":0},
+
+  {"id":"r048","nombre":"Villa Mella → Zona Colonial","tipo":"guagua","icono":"🚌","tramos":[{"desde":"villa_mella","hasta":"cristo_rey","tiempo_min":20,"tiempo_pct":25,"costo":20},{"desde":"cristo_rey","hasta":"villa_juana","tiempo_min":8,"tiempo_pct":15,"costo":15},{"desde":"villa_juana","hasta":"zona_colonial","tiempo_min":10,"tiempo_pct":10,"costo":15}],"transbordos":0},
+  {"id":"r049","nombre":"Villa Mella → Zona Colonial","tipo":"mixto","icono":"🔄","tramos":[{"desde":"villa_mella","hasta":"cristo_rey","tiempo_min":12,"tiempo_pct":15,"costo":50},{"desde":"cristo_rey","hasta":"zona_colonial","tiempo_min":15,"tiempo_pct":20,"costo":20}],"transbordos":1},
+  {"id":"r050","nombre":"Villa Mella → Cristo Rey","tipo":"guagua","icono":"🚌","tramos":[{"desde":"villa_mella","hasta":"cristo_rey","tiempo_min":20,"tiempo_pct":25,"costo":20}],"transbordos":0},
+  {"id":"r051","nombre":"Villa Mella → Capotillo","tipo":"concho","icono":"🚗","tramos":[{"desde":"villa_mella","hasta":"capotillo","tiempo_min":15,"tiempo_pct":20,"costo":30}],"transbordos":0},
+  {"id":"r052","nombre":"Villa Mella → La Zurza","tipo":"concho","icono":"🚗","tramos":[{"desde":"villa_mella","hasta":"la_zurza","tiempo_min":18,"tiempo_pct":20,"costo":30}],"transbordos":0},
+  {"id":"r053","nombre":"Villa Mella → Sabana Perdida","tipo":"concho","icono":"🚗","tramos":[{"desde":"villa_mella","hasta":"sabana_perdida","tiempo_min":12,"tiempo_pct":15,"costo":25}],"transbordos":0},
+
+  {"id":"r054","nombre":"Los Mina → Zona Colonial","tipo":"guagua","icono":"🚌","tramos":[{"desde":"los_mina","hasta":"zona_colonial","tiempo_min":22,"tiempo_pct":20,"costo":15}],"transbordos":0},
+  {"id":"r055","nombre":"Los Mina → Alma Rosa","tipo":"concho","icono":"🚗","tramos":[{"desde":"los_mina","hasta":"alma_rosa","tiempo_min":10,"tiempo_pct":15,"costo":25}],"transbordos":0},
+  {"id":"r056","nombre":"Los Mina → San Isidro","tipo":"guagua","icono":"🚌","tramos":[{"desde":"los_mina","hasta":"san_isidro","tiempo_min":10,"tiempo_pct":15,"costo":15}],"transbordos":0},
+  {"id":"r057","nombre":"Los Mina → Ensanche Ozama","tipo":"concho","icono":"🚗","tramos":[{"desde":"los_mina","hasta":"ensanche_ozama","tiempo_min":7,"tiempo_pct":10,"costo":25}],"transbordos":0},
+  {"id":"r058","nombre":"Los Mina → Gazcue","tipo":"guagua","icono":"🚌","tramos":[{"desde":"los_mina","hasta":"ensanche_ozama","tiempo_min":7,"tiempo_pct":10,"costo":15},{"desde":"ensanche_ozama","hasta":"gazcue","tiempo_min":15,"tiempo_pct":20,"costo":15}],"transbordos":0},
+  {"id":"r059","nombre":"Los Mina → Mendoza","tipo":"motoconcho","icono":"🏍️","tramos":[{"desde":"los_mina","hasta":"mendoza","tiempo_min":8,"tiempo_pct":10,"costo":40}],"transbordos":0},
+  {"id":"r060","nombre":"Los Mina → Charles de Gaulle","tipo":"concho","icono":"🚗","tramos":[{"desde":"los_mina","hasta":"charles_de_gaulle","tiempo_min":12,"tiempo_pct":15,"costo":25}],"transbordos":0},
+  {"id":"r061","nombre":"Los Mina → Naco","tipo":"mixto","icono":"🔄","tramos":[{"desde":"los_mina","hasta":"ensanche_ozama","tiempo_min":7,"tiempo_pct":10,"costo":20},{"desde":"ensanche_ozama","hasta":"naco","tiempo_min":18,"tiempo_pct":20,"costo":30}],"transbordos":1},
+
+  {"id":"r062","nombre":"Los Alcarrizos → 27 de Febrero","tipo":"guagua","icono":"🚌","tramos":[{"desde":"los_alcarrizos","hasta":"herrera","tiempo_min":15,"tiempo_pct":20,"costo":20},{"desde":"herrera","hasta":"los_rios","tiempo_min":12,"tiempo_pct":15,"costo":15},{"desde":"los_rios","hasta":"27_de_febrero","tiempo_min":8,"tiempo_pct":10,"costo":15}],"transbordos":0},
+  {"id":"r063","nombre":"Los Alcarrizos → Herrera","tipo":"concho","icono":"🚗","tramos":[{"desde":"los_alcarrizos","hasta":"herrera","tiempo_min":12,"tiempo_pct":15,"costo":30}],"transbordos":0},
+  {"id":"r064","nombre":"Los Alcarrizos → Manoguayabo","tipo":"concho","icono":"🚗","tramos":[{"desde":"los_alcarrizos","hasta":"manoguayabo","tiempo_min":10,"tiempo_pct":15,"costo":25}],"transbordos":0},
+  {"id":"r065","nombre":"Los Alcarrizos → Los Ríos","tipo":"guagua","icono":"🚌","tramos":[{"desde":"los_alcarrizos","hasta":"herrera","tiempo_min":15,"tiempo_pct":20,"costo":20},{"desde":"herrera","hasta":"los_rios","tiempo_min":12,"tiempo_pct":15,"costo":15}],"transbordos":0},
+
+  {"id":"r066","nombre":"Herrera → Los Ríos","tipo":"concho","icono":"🚗","tramos":[{"desde":"herrera","hasta":"los_rios","tiempo_min":12,"tiempo_pct":15,"costo":30}],"transbordos":0},
+  {"id":"r067","nombre":"Herrera → Naco","tipo":"guagua","icono":"🚌","tramos":[{"desde":"herrera","hasta":"los_rios","tiempo_min":12,"tiempo_pct":15,"costo":20},{"desde":"los_rios","hasta":"arroyo_hondo","tiempo_min":10,"tiempo_pct":10,"costo":15},{"desde":"arroyo_hondo","hasta":"naco","tiempo_min":8,"tiempo_pct":15,"costo":15}],"transbordos":0},
+  {"id":"r068","nombre":"Herrera → 27 de Febrero","tipo":"concho","icono":"🚗","tramos":[{"desde":"herrera","hasta":"27_de_febrero","tiempo_min":15,"tiempo_pct":20,"costo":35}],"transbordos":0},
+  {"id":"r069","nombre":"Herrera → Los Alcarrizos","tipo":"concho","icono":"🚗","tramos":[{"desde":"herrera","hasta":"los_alcarrizos","tiempo_min":12,"tiempo_pct":15,"costo":30}],"transbordos":0},
+  {"id":"r070","nombre":"Herrera → Ensanche Luperón","tipo":"concho","icono":"🚗","tramos":[{"desde":"herrera","hasta":"ensanche_luperon","tiempo_min":10,"tiempo_pct":10,"costo":25}],"transbordos":0},
+
+  {"id":"r071","nombre":"Arroyo Hondo → Zona Colonial","tipo":"concho","icono":"🚗","tramos":[{"desde":"arroyo_hondo","hasta":"los_prados","tiempo_min":8,"tiempo_pct":10,"costo":25},{"desde":"los_prados","hasta":"gazcue","tiempo_min":7,"tiempo_pct":10,"costo":25},{"desde":"gazcue","hasta":"zona_colonial","tiempo_min":10,"tiempo_pct":10,"costo":30}],"transbordos":0},
+  {"id":"r072","nombre":"Arroyo Hondo → Los Prados","tipo":"concho","icono":"🚗","tramos":[{"desde":"arroyo_hondo","hasta":"los_prados","tiempo_min":8,"tiempo_pct":10,"costo":25}],"transbordos":0},
+  {"id":"r073","nombre":"Arroyo Hondo → Naco","tipo":"concho","icono":"🚗","tramos":[{"desde":"arroyo_hondo","hasta":"naco","tiempo_min":8,"tiempo_pct":15,"costo":30}],"transbordos":0},
+  {"id":"r074","nombre":"Arroyo Hondo → Los Ríos","tipo":"concho","icono":"🚗","tramos":[{"desde":"arroyo_hondo","hasta":"los_rios","tiempo_min":10,"tiempo_pct":10,"costo":25}],"transbordos":0},
+
+  {"id":"r075","nombre":"Villa Juana → Zona Colonial","tipo":"concho","icono":"🚗","tramos":[{"desde":"villa_juana","hasta":"zona_colonial","tiempo_min":10,"tiempo_pct":10,"costo":25}],"transbordos":0},
+  {"id":"r076","nombre":"Villa Juana → Gazcue","tipo":"concho","icono":"🚗","tramos":[{"desde":"villa_juana","hasta":"gazcue","tiempo_min":8,"tiempo_pct":15,"costo":25}],"transbordos":0},
+  {"id":"r077","nombre":"Villa Juana → Cristo Rey","tipo":"concho","icono":"🚗","tramos":[{"desde":"villa_juana","hasta":"cristo_rey","tiempo_min":7,"tiempo_pct":10,"costo":25}],"transbordos":0},
+  {"id":"r078","nombre":"Villa Juana → Ensanche Ozama","tipo":"guagua","icono":"🚌","tramos":[{"desde":"villa_juana","hasta":"ensanche_ozama","tiempo_min":10,"tiempo_pct":15,"costo":15}],"transbordos":0},
+  {"id":"r079","nombre":"Villa Juana → Villa Consuelo","tipo":"motoconcho","icono":"🏍️","tramos":[{"desde":"villa_juana","hasta":"villa_consuelo","tiempo_min":5,"tiempo_pct":10,"costo":40}],"transbordos":0},
+
+  {"id":"r080","nombre":"Villa Consuelo → Zona Colonial","tipo":"concho","icono":"🚗","tramos":[{"desde":"villa_consuelo","hasta":"zona_colonial","tiempo_min":10,"tiempo_pct":15,"costo":30}],"transbordos":0},
+  {"id":"r081","nombre":"Villa Consuelo → Cristo Rey","tipo":"concho","icono":"🚗","tramos":[{"desde":"villa_consuelo","hasta":"cristo_rey","tiempo_min":7,"tiempo_pct":10,"costo":25}],"transbordos":0},
+  {"id":"r082","nombre":"Villa Consuelo → Arroyo Hondo","tipo":"guagua","icono":"🚌","tramos":[{"desde":"villa_consuelo","hasta":"cristo_rey","tiempo_min":7,"tiempo_pct":10,"costo":15},{"desde":"cristo_rey","hasta":"los_prados","tiempo_min":10,"tiempo_pct":15,"costo":15},{"desde":"los_prados","hasta":"arroyo_hondo","tiempo_min":8,"tiempo_pct":10,"costo":15}],"transbordos":0},
+  {"id":"r083","nombre":"Villa Consuelo → Gualey","tipo":"motoconcho","icono":"🏍️","tramos":[{"desde":"villa_consuelo","hasta":"gualey","tiempo_min":5,"tiempo_pct":10,"costo":35}],"transbordos":0},
+
+  {"id":"r084","nombre":"Capotillo → Zona Colonial","tipo":"concho","icono":"🚗","tramos":[{"desde":"capotillo","hasta":"villa_consuelo","tiempo_min":6,"tiempo_pct":10,"costo":25},{"desde":"villa_consuelo","hasta":"zona_colonial","tiempo_min":10,"tiempo_pct":15,"costo":30}],"transbordos":0},
+  {"id":"r085","nombre":"Capotillo → Cristo Rey","tipo":"motoconcho","icono":"🏍️","tramos":[{"desde":"capotillo","hasta":"cristo_rey","tiempo_min":8,"tiempo_pct":10,"costo":50}],"transbordos":0},
+  {"id":"r086","nombre":"Capotillo → La Zurza","tipo":"concho","icono":"🚗","tramos":[{"desde":"capotillo","hasta":"la_zurza","tiempo_min":6,"tiempo_pct":10,"costo":25}],"transbordos":0},
+  {"id":"r087","nombre":"Capotillo → Villa Mella","tipo":"concho","icono":"🚗","tramos":[{"desde":"capotillo","hasta":"villa_mella","tiempo_min":15,"tiempo_pct":20,"costo":30}],"transbordos":0},
+
+  {"id":"r088","nombre":"La Zurza → Los Prados","tipo":"motoconcho","icono":"🏍️","tramos":[{"desde":"la_zurza","hasta":"los_prados","tiempo_min":8,"tiempo_pct":15,"costo":50}],"transbordos":0},
+  {"id":"r089","nombre":"La Zurza → Capotillo","tipo":"concho","icono":"🚗","tramos":[{"desde":"la_zurza","hasta":"capotillo","tiempo_min":6,"tiempo_pct":10,"costo":25}],"transbordos":0},
+  {"id":"r090","nombre":"La Zurza → Cristo Rey","tipo":"guagua","icono":"🚌","tramos":[{"desde":"la_zurza","hasta":"capotillo","tiempo_min":6,"tiempo_pct":10,"costo":15},{"desde":"capotillo","hasta":"cristo_rey","tiempo_min":10,"tiempo_pct":15,"costo":15}],"transbordos":0},
+  {"id":"r091","nombre":"La Zurza → Villa Mella","tipo":"concho","icono":"🚗","tramos":[{"desde":"la_zurza","hasta":"villa_mella","tiempo_min":18,"tiempo_pct":20,"costo":30}],"transbordos":0},
+
+  {"id":"r092","nombre":"Gualey → Bella Vista","tipo":"motoconcho","icono":"🏍️","tramos":[{"desde":"gualey","hasta":"bella_vista","tiempo_min":10,"tiempo_pct":15,"costo":60}],"transbordos":0},
+  {"id":"r093","nombre":"Gualey → Bella Vista","tipo":"concho","icono":"🚗","tramos":[{"desde":"gualey","hasta":"villa_consuelo","tiempo_min":5,"tiempo_pct":10,"costo":25},{"desde":"villa_consuelo","hasta":"bella_vista","tiempo_min":12,"tiempo_pct":15,"costo":30}],"transbordos":0},
+  {"id":"r094","nombre":"Gualey → Villa Consuelo","tipo":"motoconcho","icono":"🏍️","tramos":[{"desde":"gualey","hasta":"villa_consuelo","tiempo_min":5,"tiempo_pct":10,"costo":35}],"transbordos":0},
+  {"id":"r095","nombre":"Gualey → Zona Colonial","tipo":"concho","icono":"🚗","tramos":[{"desde":"gualey","hasta":"villa_consuelo","tiempo_min":5,"tiempo_pct":10,"costo":25},{"desde":"villa_consuelo","hasta":"zona_colonial","tiempo_min":10,"tiempo_pct":15,"costo":30}],"transbordos":0},
+
+  {"id":"r096","nombre":"Ensanche Ozama → Los Mina","tipo":"concho","icono":"🚗","tramos":[{"desde":"ensanche_ozama","hasta":"los_mina","tiempo_min":8,"tiempo_pct":10,"costo":25}],"transbordos":0},
+  {"id":"r097","nombre":"Ensanche Ozama → Gazcue","tipo":"guagua","icono":"🚌","tramos":[{"desde":"ensanche_ozama","hasta":"gazcue","tiempo_min":15,"tiempo_pct":20,"costo":15}],"transbordos":0},
+  {"id":"r098","nombre":"Ensanche Ozama → Zona Colonial","tipo":"guagua","icono":"🚌","tramos":[{"desde":"ensanche_ozama","hasta":"zona_colonial","tiempo_min":12,"tiempo_pct":15,"costo":15}],"transbordos":0},
+
+  {"id":"r099","nombre":"La Feria → Villa Juana","tipo":"concho","icono":"🚗","tramos":[{"desde":"la_feria","hasta":"villa_juana","tiempo_min":6,"tiempo_pct":10,"costo":25}],"transbordos":0},
+  {"id":"r100","nombre":"La Feria → Los Mina","tipo":"guagua","icono":"🚌","tramos":[{"desde":"la_feria","hasta":"villa_juana","tiempo_min":6,"tiempo_pct":10,"costo":15},{"desde":"villa_juana","hasta":"ensanche_ozama","tiempo_min":10,"tiempo_pct":15,"costo":15},{"desde":"ensanche_ozama","hasta":"los_mina","tiempo_min":8,"tiempo_pct":10,"costo":15}],"transbordos":0},
+  {"id":"r101","nombre":"La Feria → Gazcue","tipo":"concho","icono":"🚗","tramos":[{"desde":"la_feria","hasta":"gazcue","tiempo_min":8,"tiempo_pct":10,"costo":25}],"transbordos":0},
+  {"id":"r102","nombre":"La Feria → Ensanche Luperón","tipo":"concho","icono":"🚗","tramos":[{"desde":"la_feria","hasta":"ensanche_luperon","tiempo_min":7,"tiempo_pct":10,"costo":25}],"transbordos":0},
+
+  {"id":"r103","nombre":"Ensanche Luperón → Malecón","tipo":"guagua","icono":"🚌","tramos":[{"desde":"ensanche_luperon","hasta":"la_feria","tiempo_min":7,"tiempo_pct":10,"costo":15},{"desde":"la_feria","hasta":"gazcue","tiempo_min":8,"tiempo_pct":10,"costo":15},{"desde":"gazcue","hasta":"malecon","tiempo_min":6,"tiempo_pct":10,"costo":15}],"transbordos":0},
+  {"id":"r104","nombre":"Ensanche Luperón → La Feria","tipo":"concho","icono":"🚗","tramos":[{"desde":"ensanche_luperon","hasta":"la_feria","tiempo_min":7,"tiempo_pct":10,"costo":25}],"transbordos":0},
+  {"id":"r105","nombre":"Ensanche Luperón → Herrera","tipo":"concho","icono":"🚗","tramos":[{"desde":"ensanche_luperon","hasta":"herrera","tiempo_min":10,"tiempo_pct":10,"costo":25}],"transbordos":0},
+
+  {"id":"r106","nombre":"Los Ríos → 27 de Febrero","tipo":"concho","icono":"🚗","tramos":[{"desde":"los_rios","hasta":"27_de_febrero","tiempo_min":8,"tiempo_pct":10,"costo":25}],"transbordos":0},
+  {"id":"r107","nombre":"Los Ríos → Arroyo Hondo","tipo":"concho","icono":"🚗","tramos":[{"desde":"los_rios","hasta":"arroyo_hondo","tiempo_min":10,"tiempo_pct":10,"costo":25}],"transbordos":0},
+  {"id":"r108","nombre":"Los Ríos → Herrera","tipo":"concho","icono":"🚗","tramos":[{"desde":"los_rios","hasta":"herrera","tiempo_min":12,"tiempo_pct":15,"costo":30}],"transbordos":0},
+  {"id":"r109","nombre":"Los Ríos → Los Mina","tipo":"guagua","icono":"🚌","tramos":[{"desde":"los_rios","hasta":"27_de_febrero","tiempo_min":8,"tiempo_pct":10,"costo":15},{"desde":"27_de_febrero","hasta":"ensanche_ozama","tiempo_min":12,"tiempo_pct":15,"costo":15},{"desde":"ensanche_ozama","hasta":"los_mina","tiempo_min":8,"tiempo_pct":10,"costo":15}],"transbordos":0},
+
+  {"id":"r110","nombre":"27 de Febrero → Alma Rosa","tipo":"guagua","icono":"🚌","tramos":[{"desde":"27_de_febrero","hasta":"ensanche_ozama","tiempo_min":12,"tiempo_pct":15,"costo":15},{"desde":"ensanche_ozama","hasta":"los_mina","tiempo_min":8,"tiempo_pct":10,"costo":15},{"desde":"los_mina","hasta":"alma_rosa","tiempo_min":10,"tiempo_pct":15,"costo":15}],"transbordos":0},
+  {"id":"r111","nombre":"27 de Febrero → Los Ríos","tipo":"concho","icono":"🚗","tramos":[{"desde":"27_de_febrero","hasta":"los_rios","tiempo_min":8,"tiempo_pct":10,"costo":25}],"transbordos":0},
+  {"id":"r112","nombre":"27 de Febrero → Naco","tipo":"concho","icono":"🚗","tramos":[{"desde":"27_de_febrero","hasta":"naco","tiempo_min":10,"tiempo_pct":15,"costo":30}],"transbordos":0},
+  {"id":"r113","nombre":"27 de Febrero → Ensanche Ozama","tipo":"guagua","icono":"🚌","tramos":[{"desde":"27_de_febrero","hasta":"ensanche_ozama","tiempo_min":12,"tiempo_pct":15,"costo":15}],"transbordos":0},
+
+  {"id":"r114","nombre":"Malecón → Zona Colonial","tipo":"concho","icono":"🚗","tramos":[{"desde":"malecon","hasta":"zona_colonial","tiempo_min":5,"tiempo_pct":10,"costo":25}],"transbordos":0},
+  {"id":"r115","nombre":"Malecón → Gazcue","tipo":"concho","icono":"🚗","tramos":[{"desde":"malecon","hasta":"gazcue","tiempo_min":6,"tiempo_pct":10,"costo":25}],"transbordos":0},
+  {"id":"r116","nombre":"Malecón → Naco","tipo":"concho","icono":"🚗","tramos":[{"desde":"malecon","hasta":"gazcue","tiempo_min":6,"tiempo_pct":10,"costo":25},{"desde":"gazcue","hasta":"los_prados","tiempo_min":7,"tiempo_pct":10,"costo":25},{"desde":"los_prados","hasta":"naco","tiempo_min":8,"tiempo_pct":10,"costo":25}],"transbordos":0},
+
+  {"id":"r117","nombre":"Alma Rosa → Los Mina","tipo":"concho","icono":"🚗","tramos":[{"desde":"alma_rosa","hasta":"los_mina","tiempo_min":10,"tiempo_pct":15,"costo":25}],"transbordos":0},
+  {"id":"r118","nombre":"Alma Rosa → Gazcue","tipo":"mixto","icono":"🔄","tramos":[{"desde":"alma_rosa","hasta":"los_mina","tiempo_min":10,"tiempo_pct":15,"costo":15},{"desde":"los_mina","hasta":"ensanche_ozama","tiempo_min":8,"tiempo_pct":10,"costo":15},{"desde":"ensanche_ozama","hasta":"gazcue","tiempo_min":15,"tiempo_pct":20,"costo":30}],"transbordos":1},
+  {"id":"r119","nombre":"Alma Rosa → San Isidro","tipo":"concho","icono":"🚗","tramos":[{"desde":"alma_rosa","hasta":"san_isidro","tiempo_min":8,"tiempo_pct":10,"costo":25}],"transbordos":0},
+  {"id":"r120","nombre":"Alma Rosa → Charles de Gaulle","tipo":"motoconcho","icono":"🏍️","tramos":[{"desde":"alma_rosa","hasta":"charles_de_gaulle","tiempo_min":6,"tiempo_pct":10,"costo":40}],"transbordos":0},
+
+  {"id":"r121","nombre":"San Isidro → Los Mina","tipo":"guagua","icono":"🚌","tramos":[{"desde":"san_isidro","hasta":"los_mina","tiempo_min":10,"tiempo_pct":15,"costo":15}],"transbordos":0},
+  {"id":"r122","nombre":"San Isidro → Gazcue","tipo":"guagua","icono":"🚌","tramos":[{"desde":"san_isidro","hasta":"los_mina","tiempo_min":10,"tiempo_pct":15,"costo":15},{"desde":"los_mina","hasta":"ensanche_ozama","tiempo_min":7,"tiempo_pct":10,"costo":15},{"desde":"ensanche_ozama","hasta":"gazcue","tiempo_min":15,"tiempo_pct":20,"costo":15}],"transbordos":0},
+  {"id":"r123","nombre":"San Isidro → Alma Rosa","tipo":"concho","icono":"🚗","tramos":[{"desde":"san_isidro","hasta":"alma_rosa","tiempo_min":8,"tiempo_pct":10,"costo":25}],"transbordos":0},
+  {"id":"r124","nombre":"San Isidro → Las Américas","tipo":"concho","icono":"🚗","tramos":[{"desde":"san_isidro","hasta":"las_americas","tiempo_min":8,"tiempo_pct":10,"costo":25}],"transbordos":0},
+
+  {"id":"r125","nombre":"Sabana Perdida → Villa Mella","tipo":"concho","icono":"🚗","tramos":[{"desde":"sabana_perdida","hasta":"villa_mella","tiempo_min":12,"tiempo_pct":15,"costo":25}],"transbordos":0},
+  {"id":"r126","nombre":"Sabana Perdida → Cristo Rey","tipo":"mixto","icono":"🔄","tramos":[{"desde":"sabana_perdida","hasta":"villa_mella","tiempo_min":12,"tiempo_pct":15,"costo":20},{"desde":"villa_mella","hasta":"capotillo","tiempo_min":10,"tiempo_pct":20,"costo":25},{"desde":"capotillo","hasta":"cristo_rey","tiempo_min":8,"tiempo_pct":10,"costo":25}],"transbordos":1},
+
+  {"id":"r127","nombre":"Charles de Gaulle → Los Mina","tipo":"concho","icono":"🚗","tramos":[{"desde":"charles_de_gaulle","hasta":"los_mina","tiempo_min":12,"tiempo_pct":15,"costo":25}],"transbordos":0},
+  {"id":"r128","nombre":"Charles de Gaulle → Alma Rosa","tipo":"motoconcho","icono":"🏍️","tramos":[{"desde":"charles_de_gaulle","hasta":"alma_rosa","tiempo_min":6,"tiempo_pct":10,"costo":40}],"transbordos":0},
+  {"id":"r129","nombre":"Charles de Gaulle → Piantini","tipo":"mixto","icono":"🔄","tramos":[{"desde":"charles_de_gaulle","hasta":"alma_rosa","tiempo_min":6,"tiempo_pct":10,"costo":20},{"desde":"alma_rosa","hasta":"los_mina","tiempo_min":10,"tiempo_pct":15,"costo":15},{"desde":"los_mina","hasta":"piantini","tiempo_min":22,"tiempo_pct":25,"costo":30}],"transbordos":1},
+
+  {"id":"r130","nombre":"Las Américas → Naco","tipo":"mixto","icono":"🔄","tramos":[{"desde":"las_americas","hasta":"san_isidro","tiempo_min":8,"tiempo_pct":10,"costo":15},{"desde":"san_isidro","hasta":"los_mina","tiempo_min":10,"tiempo_pct":15,"costo":20},{"desde":"los_mina","hasta":"naco","tiempo_min":20,"tiempo_pct":25,"costo":35}],"transbordos":1},
+  {"id":"r131","nombre":"Las Américas → San Isidro","tipo":"concho","icono":"🚗","tramos":[{"desde":"las_americas","hasta":"san_isidro","tiempo_min":8,"tiempo_pct":10,"costo":25}],"transbordos":0},
+  {"id":"r132","nombre":"Las Américas → Los Mina","tipo":"guagua","icono":"🚌","tramos":[{"desde":"las_americas","hasta":"san_isidro","tiempo_min":8,"tiempo_pct":10,"costo":15},{"desde":"san_isidro","hasta":"los_mina","tiempo_min":10,"tiempo_pct":15,"costo":15}],"transbordos":0},
+
+  {"id":"r133","nombre":"Mendoza → Los Mina","tipo":"motoconcho","icono":"🏍️","tramos":[{"desde":"mendoza","hasta":"los_mina","tiempo_min":8,"tiempo_pct":10,"costo":40}],"transbordos":0},
+  {"id":"r134","nombre":"Mendoza → Zona Colonial","tipo":"guagua","icono":"🚌","tramos":[{"desde":"mendoza","hasta":"los_mina","tiempo_min":8,"tiempo_pct":10,"costo":15},{"desde":"los_mina","hasta":"ensanche_ozama","tiempo_min":7,"tiempo_pct":10,"costo":15},{"desde":"ensanche_ozama","hasta":"zona_colonial","tiempo_min":12,"tiempo_pct":15,"costo":15}],"transbordos":0},
+
+  {"id":"r135","nombre":"Manoguayabo → Los Alcarrizos","tipo":"concho","icono":"🚗","tramos":[{"desde":"manoguayabo","hasta":"los_alcarrizos","tiempo_min":10,"tiempo_pct":15,"costo":25}],"transbordos":0},
+  {"id":"r136","nombre":"Manoguayabo → Herrera","tipo":"concho","icono":"🚗","tramos":[{"desde":"manoguayabo","hasta":"los_alcarrizos","tiempo_min":10,"tiempo_pct":15,"costo":20},{"desde":"los_alcarrizos","hasta":"herrera","tiempo_min":15,"tiempo_pct":20,"costo":25}],"transbordos":0},
+  {"id":"r137","nombre":"Manoguayabo → Gazcue","tipo":"mixto","icono":"🔄","tramos":[{"desde":"manoguayabo","hasta":"los_alcarrizos","tiempo_min":10,"tiempo_pct":15,"costo":20},{"desde":"los_alcarrizos","hasta":"herrera","tiempo_min":15,"tiempo_pct":20,"costo":20},{"desde":"herrera","hasta":"los_rios","tiempo_min":12,"tiempo_pct":15,"costo":25},{"desde":"los_rios","hasta":"gazcue","tiempo_min":10,"tiempo_pct":10,"costo":30}],"transbordos":2}
 ]
